@@ -1,0 +1,13 @@
+---
+spring:
+  application:
+    name: user-service
+    
+application:
+  admin:
+    username: admin
+    password: admin
+    
+management:
+  security: 
+    enabled: false
