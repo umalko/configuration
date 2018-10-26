@@ -2,6 +2,14 @@
 spring:
   application:
     name: user-service
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgres://kbjlrqic:jg0vLGmuQ27kAp_BwvgK422x9o3G48bh@stampy.db.elephantsql.com:5432/kbjlrqic
+    username: kbjlrqic
+    password: jg0vLGmuQ27kAp_BwvgK422x9o3G48bh
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: create
     
 application:
   admin:
