@@ -6,7 +6,7 @@ spring:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgres://kbjlrqic:jg0vLGmuQ27kAp_BwvgK422x9o3G48bh@stampy.db.elephantsql.com:5432/kbjlrqic
     username: kbjlrqic
-    password: jg0vLGmuQ27kAp_BwvgK422x9o3G48bh
+    password: 87559c0e4d51bd7ea8a465e9bb7e0ba7962f40561dfa76924d745f3028a843a2e7df4afe559312600c0a90d03eef8767e8946324450d530bcf5aef6a16bdb674
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: create
