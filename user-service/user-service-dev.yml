@@ -10,7 +10,8 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: create
-    
+  
+---  
 mavs:
   users:
     key: {cipher}fbf4576a526893ad5e19ce65f50008e0db8509d249517fc71e31c07fcccb1415
