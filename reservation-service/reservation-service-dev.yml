@@ -10,20 +10,3 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: create
-
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: *
-  security:
-    enabled: false
-security:
-  basic:
-    enabled: false
-    
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: https://p-service-registry-339760a6-b634-40b1-bb42-0f1699a2aaf0:RfR9XJuLBCsz@eureka-ce7e8bcd-06c6-4cc8-93ab-b87b78bb0d57.cfapps.io/eureka
