@@ -18,7 +18,7 @@ spring:
             non_contextual_creation: true    
 
 server:
-  port: 0
+  port: ${random.int[10000,65000]}
 
 eureka:
   client:
