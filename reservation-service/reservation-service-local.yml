@@ -17,9 +17,7 @@ spring:
           lob:
             non_contextual_creation: true
   security:
-    user:
-      name: admin
-      password: admin
+    enabled: false
       
 server:
   port: 8081
@@ -29,3 +27,13 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
     fetchRegistry: true
+
+
+security:
+  ignored=/**
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
