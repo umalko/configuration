@@ -30,7 +30,7 @@ eureka:
 
 
 security:
-  ignored=/**
+  ignored: /**
   basic:
     enabled: false
 
