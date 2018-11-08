@@ -18,17 +18,12 @@ spring:
             non_contextual_creation: true
   security:
     enabled: false
-      
 server:
   port: 8081
-
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-    fetchRegistry: true
-
-
 security:
   ignored: /**
   basic:
