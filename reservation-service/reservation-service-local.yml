@@ -5,7 +5,7 @@ spring:
   profiles: local
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/users-service-db
+    url: jdbc:postgresql://localhost:5432/reservations-service-db
     username: postgres
     password: root
   jpa:
@@ -23,7 +23,7 @@ spring:
     port: 6379
 
 server:
-  port: ${random.int[10000,65000]}
+  port: 8081
 
 eureka:
   client:
