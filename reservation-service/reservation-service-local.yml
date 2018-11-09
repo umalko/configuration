@@ -26,9 +26,6 @@ server:
   port: 8081
 
 eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
   client:
     fetchRegistry: true
     serviceUrl:
