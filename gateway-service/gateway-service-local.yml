@@ -30,7 +30,7 @@ hystrix:
       execution:
         isolation:
           thread: 600000
-            timeoutInMilliseconds: 
+            timeoutInMilliseconds:
     reservation-service:
       execution:
         isolation:
