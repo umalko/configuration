@@ -10,6 +10,26 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: create
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  cache:
+    type: redis
+  redis:
+    host: redis-13519.c16.us-east-1-2.ec2.cloud.redislabs.com
+    port: 13519
+  rabbitmq:
+    host: baboon.rmq.cloudamqp.com
+    port: 5672
+    username: awiymfbp
+    password: wBVmFlXLDtOtMgIWZk4qHftJKT1QPVGV
+
+custom:
+  featureSwitch:
+    userApiEnabled: false
+    
 
 security:
   basic:
