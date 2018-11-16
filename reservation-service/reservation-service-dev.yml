@@ -28,7 +28,7 @@ spring:
 
 custom:
   featureSwitch:
-    userApiEnabled: true12345
+    userApiEnabled: true123456
     
 
 security:
