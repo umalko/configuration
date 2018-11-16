@@ -21,10 +21,7 @@ spring:
     host: redis-13519.c16.us-east-1-2.ec2.cloud.redislabs.com
     port: 13519
   rabbitmq:
-    host: baboon.rmq.cloudamqp.com
-    port: 5672
-    username: awiymfbp
-    password: wBVmFlXLDtOtMgIWZk4qHftJKT1QPVGV
+    addresses: amqp://awiymfbp:wBVmFlXLDtOtMgIWZk4qHftJKT1QPVGV@baboon.rmq.cloudamqp.com/awiymfbp
 
 custom:
   featureSwitch:
