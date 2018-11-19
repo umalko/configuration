@@ -22,10 +22,13 @@ spring:
     port: 13519
   rabbitmq:
     addresses: amqp://awiymfbp:wBVmFlXLDtOtMgIWZk4qHftJKT1QPVGV@baboon.rmq.cloudamqp.com/awiymfbp
-
+  cloud:
+    bus:
+      #Workaround for defect in https://github.com/spring-cloud/spring-cloud-bus/issues/124
+      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
 custom:
   featureSwitch:
-    userApiEnabled: true111233335566
+    userApiEnabled: true
     
 
 security:
@@ -34,3 +37,7 @@ security:
 management:
   security:
     enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
