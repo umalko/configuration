@@ -37,3 +37,7 @@ eureka:
 custom:
   featureSwitch:
     userApiEnabled: false12
+
+user:
+  role: 22113322
+  password: oiu2
