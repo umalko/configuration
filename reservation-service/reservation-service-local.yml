@@ -25,6 +25,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+  cloud:
+    bus:
+      #Workaround for defect in https://github.com/spring-cloud/spring-cloud-bus/issues/124
+      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
 server:
   port: 8081
 eureka:
@@ -33,10 +37,14 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 custom:
   featureSwitch:
     userApiEnabled: false12
-
-user:
-  role: 22113322
-  password: oiu2
