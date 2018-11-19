@@ -36,4 +36,4 @@ eureka:
 
 custom:
   featureSwitch:
-    userApiEnabled: false1
+    userApiEnabled: false12
