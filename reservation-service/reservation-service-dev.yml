@@ -4,8 +4,6 @@ random:
 spring:
   application:
     name: reservation-service
-  profiles:
-    active: dev
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgres://kbjlrqic:jg0vLGmuQ27kAp_BwvgK422x9o3G48bh@stampy.db.elephantsql.com:5432/kbjlrqic
