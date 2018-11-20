@@ -48,4 +48,4 @@ management:
 
 custom:
   featureSwitch:
-    userApiEnabled: false12
+    userApiEnabled: false1245
