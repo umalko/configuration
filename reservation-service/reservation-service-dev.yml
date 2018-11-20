@@ -1,4 +1,6 @@
 ---
+random:
+  value: ${random.int:456456454}
 spring:
   application:
     name: reservation-service
@@ -27,7 +29,7 @@ spring:
   cloud:
     bus:
       #Workaround for defect in https://github.com/spring-cloud/spring-cloud-bus/issues/124
-      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}
+      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
 custom:
   featureSwitch:
     userApiEnabled: true13346666
