@@ -9,7 +9,7 @@ spring:
     password: '{cipher}3451b6c9ce5bd91082afc85b681eef108131ba87e6c5aacc2c4e1ce516ba320b63c2aacc0319af8ff528ceee8fa03f60c6dd2cf912dbbbb8978126469af58152'
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate.ddl-auto: create
+    hibernate.ddl-auto: update
 app:
   users:
     key: '{cipher}78390e033802171983f5acf496dbd38495644be13d5235abc529fd717797bf80'
