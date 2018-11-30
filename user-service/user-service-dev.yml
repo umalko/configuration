@@ -8,7 +8,7 @@ spring:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgres://kbjlrqic:jg0vLGmuQ27kAp_BwvgK422x9o3G48bh@stampy.db.elephantsql.com:5432/kbjlrqic
     username: kbjlrqic
-    password: '{cipher}3451b6c9ce5bd91082afc85b681eef108131ba87e6c5aacc2c4e1ce516ba320b63c2aacc0319af8ff528ceee8fa03f60c6dd2cf912dbbbb8978126469af58152'
+    password: '{cipher}e078998d11358dc5ff38ee5a36c8dc463606bd72d47bec2d490240a22d0bd66e14a4510b9c37c92a262f0decf89796788c117dd8bbdee700b77c59e411601702'
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: update
