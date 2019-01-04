@@ -4,7 +4,7 @@ spring:
     name: gateway-service-service
   profiles: local
 server:
-  port: 8070
+  port: 7070
 eureka:
   client:
     fetchRegistry: true
