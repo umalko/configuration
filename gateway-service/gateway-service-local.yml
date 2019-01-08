@@ -1,7 +1,7 @@
 ---
 spring:
   application:
-    name: gateway-service-service
+    name: gateway-service
   profiles: local
 server:
   port: 7070
@@ -32,21 +32,3 @@ zuul:
       # In case of auth, we need to pass the "/auth/" in the path to auth service. So, set strip-prefix to false
       strip-prefix: false
       sensitive-headers: Cookie,Set-Cookie # Exclude authorization from sensitive headers
-      
-hystrix:
-  command:
-    user-service:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600000
-    reservation-service:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600000
-    eureka:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600000
