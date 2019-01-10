@@ -16,7 +16,7 @@ zuul:
     user-service:
       path: /user-service/**
       service-id: AUTH-SERVICE
-      sensitive-headers: Set-Cookie,Authorization
+      sensitive-headers: Cookie,Set-Cookie
     reservation-service:
       path: /reservation-service/**
       sensitive-headers: Set-Cookie,Authorization
