@@ -5,7 +5,7 @@ spring:
   data:
     neo4j:
       username: neo4j
-      password: neo
+      password: {cipher}73a0f2817025158328d33cf4bba94abf7b3418c8cc8f7b07f99ad40fae2a0264
 server:
   port: 8072
 feign:
