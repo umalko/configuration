@@ -4,19 +4,6 @@ random:
 spring:
   application:
     name: notification-service
-#  datasource:
-#    driverClassName: org.postgresql.Driver
-#    url: jdbc:postgresql://localhost:5432/notification-service-db
-#    username: postgres
-#    password: root
-#  jpa:
-#    database-platform: org.hibernate.dialect.PostgreSQLDialect
-#    hibernate.ddl-auto: update
-#    properties:
-#      hibernate:
-#        jdbc:
-#          lob:
-#            non_contextual_creation: true
   cache:
     type: redis
   redis:
@@ -26,7 +13,7 @@ spring:
     host: localhost
     port: 5672
     username: guest
-    password: guest
+    password: '{cipher}72b483a040eab41467e3d9b215d5dbf4cc19a3bf872c912680d20f59787e2152'
   cloud:
     bus:
       id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
