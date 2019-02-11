@@ -3,11 +3,6 @@ spring:
   application:
     name: user-service
     
-application:
-  admin:
-    username: admin
-    password: '{cipher}d7f60cbc2b595e74519c41d30099442cb47d621b14ddbcd01d6ef204ea3926d6'
-    
 management:
   security: 
     enabled: false
