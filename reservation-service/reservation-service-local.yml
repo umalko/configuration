@@ -8,7 +8,7 @@ spring:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/reservations-service-db
     username: postgres
-    password: root
+    password: '{cipher}a863c76fa5b435ba0b2104379fae7780cb846d0e3cee33271a74977a1667aa42'
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: update
@@ -26,7 +26,7 @@ spring:
     host: localhost
     port: 5672
     username: guest
-    password: guest
+    password: '{cipher}4049f1c2b3de1ecb4ebf684b4822ea5d285eb3d35972edd26625ef030baa9fe2'
   cloud:
     bus:
       id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
