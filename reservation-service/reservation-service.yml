@@ -28,7 +28,7 @@ spring:
     host: baboon.rmq.cloudamqp.com
     port: 5672
     username: awiymfbp
-    password: wBVmFlXLDtOtMgIWZk4qHftJKT1QPVGV
+    password: '{cipher}f22ad01be01d182eba94d019235957a5c5d35e88a336459bbd7e191746908bc69271d75d837b8940ba4a2dfd9053f189d2231d928dd4521f50423842c434288c'
   cloud:
     config:
       profile: dev
