@@ -19,6 +19,12 @@ zuul:
     reservation-service:
       path: /reservation-service/**
       sensitive-headers: Set-Cookie,Authorization
+    product-service:
+      path: /product-service/**
+      sensitive-headers: Set-Cookie,Authorization
+    relationship-service:
+      path: /relationship-service/**
+      sensitive-headers: Set-Cookie,Authorization
     eureka:
       path: /eureka/**
       sensitive-headers: Set-Cookie,Authorization
