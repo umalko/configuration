@@ -9,10 +9,10 @@ spring:
   redis:
     host: localhost
     port: 6379
-    tcpPort: 61613
   rabbitmq:
     host: localhost
     port: 5672
+    tcpPort: 61613
     username: guest
     password: '{cipher}72b483a040eab41467e3d9b215d5dbf4cc19a3bf872c912680d20f59787e2152'
   cloud:
