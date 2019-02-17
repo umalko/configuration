@@ -1,0 +1,34 @@
+---
+random:
+  value: ${random.int:456456454}
+spring:
+  application:
+    name: chat-service
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: '{cipher}72b483a040eab41467e3d9b215d5dbf4cc19a3bf872c912680d20f59787e2152'
+  cloud:
+    bus:
+      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
+server:
+  port: 8077
+eureka:
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
