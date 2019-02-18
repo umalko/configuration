@@ -9,6 +9,9 @@ spring:
   redis:
     host: localhost
     port: 6379
+  data:
+    mongodb:
+      database: chats
   rabbitmq:
     host: localhost
     port: 5672
