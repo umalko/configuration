@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: ${APP_NAME}.herokuapp.com
+    hostname: ${spring.application.name}-g.herokuapp.com
   client:
     registerWithEureka: true
     fetchRegistry: true
