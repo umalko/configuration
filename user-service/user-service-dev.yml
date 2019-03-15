@@ -1,14 +1,13 @@
 ---
 spring:
-  profiles:
-    active: dev
   application:
-    name: reservation-service
+    name: user-service
+  profiles: dev
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgres://kbjlrqic:jg0vLGmuQ27kAp_BwvgK422x9o3G48bh@stampy.db.elephantsql.com:5432/kbjlrqic
-    username: kbjlrqic
-    password: '{cipher}e078998d11358dc5ff38ee5a36c8dc463606bd72d47bec2d490240a22d0bd66e14a4510b9c37c92a262f0decf89796788c117dd8bbdee700b77c59e411601702'
+    url: jdbc:postgresql://localhost:5432/users-service-db
+    username: postgres
+    password: '{cipher}aaa27307a0b776faf64d7181b3fff3547ca6c360f1db98ee1da151ecd480c8b3'
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: update
@@ -20,33 +19,11 @@ spring:
   cache:
     type: redis
   redis:
-    host: redis-13519.c16.us-east-1-2.ec2.cloud.redislabs.com
-    port: 13519
-#   rabbitmq:
-#     addresses: amqp://awiymfbp:wBVmFlXLDtOtMgIWZk4qHftJKT1QPVGV@baboon.rmq.cloudamqp.com/awiymfbp
+    host: localhost
+    port: 6379
+    time-to-live: 600000
   rabbitmq:
-    host: baboon.rmq.cloudamqp.com
+    host: localhost
     port: 5672
-    username: awiymfbp
-    password: '{cipher}f22ad01be01d182eba94d019235957a5c5d35e88a336459bbd7e191746908bc69271d75d837b8940ba4a2dfd9053f189d2231d928dd4521f50423842c434288c'
-  cloud:
-    config:
-      profile: dev
-    bus:
-      #Workaround for defect in https://github.com/spring-cloud/spring-cloud-bus/issues/124
-      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}
-custom:
-  featureSwitch:
-    userApiEnabled: false
-    
-
-security:
-  basic:
-    enabled: false
-management:
-  security:
-    enabled: false
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+    username: guest
+    password: '{cipher}2462bc5b9ec8ed174d1b1ace79e64632762d4e85490f0f067f116bdec6db9892'
