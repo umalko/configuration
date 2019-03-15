@@ -5,9 +5,9 @@ spring:
   profiles: dev
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/users-service-db
-    username: postgres
-    password: '{cipher}aaa27307a0b776faf64d7181b3fff3547ca6c360f1db98ee1da151ecd480c8b3'
+    url: postgres://ec2-23-23-173-30.compute-1.amazonaws.com:5432/db7ts55aogrd7n
+    username: cbzvzjkunzmtwn
+    password: '{cipher}698fcc99eb73d5e4d3de29ba03b854d645a12a6182402b2307eca1345981a1e8ad6a7bcc7b779b0f124d1a798f5d1f0ca5299077d8051a89dcdb72187bd4b6805870a55371397fa22979d4611e12bed8282408e590d66f4494a1ef20cca420e4'
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: update
