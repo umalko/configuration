@@ -1,4 +1,8 @@
 eureka:
+  instance:
+    hostname: ${APP_NAME}.herokuapp.com
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: https://user:${EUREKA_USER_PASSWORD:password}@${EUREKA_HOST:eureka-server-g}.herokuapp.com/eureka/
