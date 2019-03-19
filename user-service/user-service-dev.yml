@@ -4,7 +4,10 @@ spring:
     name: user-service
   profiles: dev
   datasource:
-    driverClassName: org.postgresql.Driver     
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-23-23-173-30.compute-1.amazonaws.com:5432/db7ts55aogrd7n
+    username: cbzvzjkunzmtwn
+    password: '{cipher}de7ecd91650343cd073bd7ff05afac9823db80b16cea9aad36aaabc375c9158cec570fbbdb58ebf520d81613b66b807aa4e38305aa290e521346da927ebf247f4de042485f6f9a65957b295e2448064887a0c72b9cea85427dba5b53284726e7'
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: update
