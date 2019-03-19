@@ -7,7 +7,7 @@ spring:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://ec2-23-23-173-30.compute-1.amazonaws.com:5432/db7ts55aogrd7n
     username: cbzvzjkunzmtwn
-    password: 7bf571dd1c804b9a1d4b5945968e689fc8ee9134e11225791d0c6baa02bb70a0
+    password: '{cipher}f4a08b6825f78e78f7fd8ccea2456d0ffca9da0c0ba876ffadc62f2e93346e9286184f818a2948e220e808b6f6da1296b3840ce08a7ee60a7f42e9b3275bb9a0313d6a6276c71d683281c7e037fb951845693aec351fd61714514f660af3b45e'
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.ddl-auto: update
