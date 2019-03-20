@@ -23,3 +23,6 @@ spring:
 hibernate:
   temp:
     use_jdbc_metadata_defaults: false
+management:
+  security: 
+    enabled: false
