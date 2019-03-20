@@ -1,0 +1,22 @@
+---
+spring:
+  application:
+    name: auth-service
+  profiles: dev
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-50-19-109-120.compute-1.amazonaws.com:5432/d43nbfoc0s2v4o
+    username: affgstmugdcplb
+    password: '{cipher}2f7e1a5dcf4b150c00fcde8e328480d56023b6983d410584a2af93622d9e4282ab454bc6ebeae9a1651797c5b29bdf7082e5640daf39079cc7d23d245d1efd521dced21b768e4a50d17d566fb4952fe2c59b64504a1a2a38a1b1bbc00a055b47'
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  rabbitmq:
+    host: zebra.rmq.cloudamqp.com
+    username: llhodgzs
+    password: '{cipher}a1da1726d270da1cabe19e14340c453b429102f956f997bf5274b340dabaf997b22d00a2a6b8d5818dadc615a11389665be244446bcfa1eeb1eb41e0fc025625'
