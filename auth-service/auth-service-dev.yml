@@ -20,3 +20,6 @@ spring:
     host: zebra.rmq.cloudamqp.com
     username: llhodgzs
     password: '{cipher}a1da1726d270da1cabe19e14340c453b429102f956f997bf5274b340dabaf997b22d00a2a6b8d5818dadc615a11389665be244446bcfa1eeb1eb41e0fc025625'
+hibernate:
+  temp:
+    use_jdbc_metadata_defaults: false
