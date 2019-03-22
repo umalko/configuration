@@ -1,6 +1,6 @@
 eureka:
   instance:
-#     hostname: ${spring.application.name}-g.herokuapp.com
+    hostname: ${spring.application.name}-g.herokuapp.com
 #     preferIpAddress: true
     metadataMap:
       instanceId: ${spring.application.name}-g.herokuapp.com
