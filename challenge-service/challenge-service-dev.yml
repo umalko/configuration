@@ -16,3 +16,13 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
