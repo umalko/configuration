@@ -1,7 +1,7 @@
 eureka:
   instance:
-    hostname: ${spring.application.name}-g.herokuapp.com
-    nonSecurePort: 80
+#     hostname: ${spring.application.name}-g.herokuapp.com
+    preferIpAddress: true
   client:
     registerWithEureka: true
     fetchRegistry: true
