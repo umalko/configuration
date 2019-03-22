@@ -1,5 +1,3 @@
-server:
-  port: 8080
 eureka:
   instance:
     hostname: ${spring.application.name}-g.herokuapp.com
