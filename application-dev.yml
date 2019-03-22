@@ -7,6 +7,10 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: https://user:${EUREKA_USER_PASSWORD:password}@${EUREKA_HOST:eureka-server-g}.herokuapp.com/eureka/
+
+server:
+  port: ${random.int[8080,8090]}
+
 security:
   basic:
     enabled: false
