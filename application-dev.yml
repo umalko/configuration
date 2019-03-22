@@ -1,11 +1,15 @@
+server:
+  port: 0
 eureka:
-  instance:
-    hostname: ${spring.application.name}-g.herokuapp.com
+#   instance:
+#     hostname: ${spring.application.name}-g.herokuapp.com
 #     preferIpAddress: true
-    metadataMap:
-      instanceId: ${spring.application.name}-g.herokuapp.com
+#     metadataMap:
+#       instanceId: ${spring.application.name}-g.herokuapp.com
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: https://user:${EUREKA_USER_PASSWORD:password}@${EUREKA_HOST:eureka-server-g}.herokuapp.com/eureka/ 
+  instance:
+    preferIpAddress: true
