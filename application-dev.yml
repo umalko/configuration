@@ -1,3 +1,5 @@
+server:
+  port: 8080
 eureka:
   instance:
     hostname: ${spring.application.name}-g.herokuapp.com
@@ -7,4 +9,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: https://user:${EUREKA_USER_PASSWORD:password}@${EUREKA_HOST:eureka-server-g}.herokuapp.com/eureka/
+      defaultZone: https://user:${EUREKA_USER_PASSWORD:password}@${EUREKA_HOST:eureka-server-g}.herokuapp.com/eureka/ 
