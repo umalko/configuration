@@ -7,6 +7,7 @@ zuul:
     user-service:
       path: /user-service/**
       sensitive-headers: Cookie,Set-Cookie
+      url: https://user-service-g.herokuapp.com/
     reservation-service:
       path: /reservation-service/**
       sensitive-headers: Set-Cookie,Authorization
@@ -24,3 +25,4 @@ zuul:
       path: /auth/**
       strip-prefix: false
       sensitive-headers: Cookie,Set-Cookie # Exclude authorization from sensitive headers
+      url: https://auth-service-g.herokuapp.com/
