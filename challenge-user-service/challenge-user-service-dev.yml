@@ -1,0 +1,28 @@
+---
+spring:
+  application:
+    name: challenge--user-service
+  profiles: dev
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-50-19-109-120.compute-1.amazonaws.com:5432/dcs079v4pemvgq
+    username: uzxbnhnvfvywsr
+    password: '{cipher}5162d8c9d8fc49e470e8348ca3aa5d685b3bd9524f7db9d7fdf7c78722d4558af3bd8302de07ee155ba7c8532bfa9d8c9bd4e9c457958073af38624042f623c5167a02469e05547c0bcc2d5abb0077c2c3b22a268f626f0aa6fba287749e1052'
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
