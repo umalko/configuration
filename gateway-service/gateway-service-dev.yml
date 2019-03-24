@@ -17,6 +17,14 @@ zuul:
     relationship-service:
       path: /relationship-service/**
       sensitive-headers: Set-Cookie,Authorization
+    challenge-service:
+      path: /challenge-service/**
+      sensitive-headers: Set-Cookie,Authorization
+      url: https://challenge-service-g.herokuapp.com/
+    challenge-user-service:
+      path: /challenge-user-service/**
+      sensitive-headers: Set-Cookie,Authorization
+      url: https://challenge-user-service-g.herokuapp.com/
     eureka:
       path: /eureka/**
       sensitive-headers: Set-Cookie,Authorization
