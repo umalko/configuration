@@ -1,0 +1,29 @@
+---
+spring:
+  application:
+    name: galaxy-game-service
+  profiles: local
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/galaxy-game-service-db
+    username: postgres
+    password: '{cipher}aaa27307a0b776faf64d7181b3fff3547ca6c360f1db98ee1da151ecd480c8b3'
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+    time-to-live: 600000
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: '{cipher}2462bc5b9ec8ed174d1b1ace79e64632762d4e85490f0f067f116bdec6db9892'
