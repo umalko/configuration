@@ -19,7 +19,7 @@ spring:
   cache:
     type: redis
   redis:
-    host: redis-17446.c114.us-east-1-4.ec2.cloud.redislabs.com
-    port: 17446
-    password: '{cipher}2cdc744ee96a56fb81bebb2e1a84ffdec4ee5194e95762ec5302bc20fe119aaeed080d546196fc0cd0b3c6f7721270c130add742b508719a4c43772131b2ceaa'
+    host: redis-15348.c9.us-east-1-4.ec2.cloud.redislabs.com
+    port: 15348
+    password: '{cipher}10c2a8ff30393e0306f3abb39f351910738cb66058ed37f414a2c9d181f5fde30df688fa9eb33a083c76df5e6c49ba5421646e32f272b73e58cfab283ae34a82'
     time-to-live: 600000
