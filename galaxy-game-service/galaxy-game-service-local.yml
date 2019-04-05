@@ -27,3 +27,12 @@ spring:
     port: 5672
     username: guest
     password: '{cipher}2462bc5b9ec8ed174d1b1ace79e64632762d4e85490f0f067f116bdec6db9892'
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+amazonProperties:
+  endpointUrl: https://s3.us-east-2.amazonaws.com
+  accessKey: XXXXXXXXXXXXXXXXX
+  secretKey: XXXXXXXXXXXXXXXXXXXXXXXXXX
+  bucketName: your-bucket-name
