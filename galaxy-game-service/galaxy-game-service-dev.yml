@@ -59,7 +59,7 @@ spring:
             tokenUri: https://graph.FACEBOOK.com/v3.0/oauth/access_token
             userInfoUri: https://graph.FACEBOOK.com/v3.0/me?fields=id,first_name,middle_name,last_name,name,email,verified,is_verified,picture.width(250).height(250)
 app:
-  url: http://localhost:8080
+  url: https://galaxy-game-service.herokuapp.com
   auth:
     tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
     tokenExpirationMsec: 864000000
@@ -69,7 +69,7 @@ app:
     # redirectUri mentioned by the client in the /oauth2/authorize request.
     # We're not using cookies because they won't work well in mobile clients.
     authorizedRedirectUris:
-    - http://localhost:3000/oauth2/redirect
+    - https://galaxy-game-ui.herokuapp.com/oauth2/redirect
     - myandroidapp://oauth2/redirect
     - myiosapp://oauth2/redirect
 amazonProperties:
