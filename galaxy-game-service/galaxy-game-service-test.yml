@@ -31,17 +31,3 @@ app:
   auth:
     tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
     tokenExpirationMsec: 864000000
-  oauth2:
-    # After successfully authenticating with the OAuth2 Provider,
-    # we'll be generating an auth token for the user and sending the token to the
-    # redirectUri mentioned by the client in the /oauth2/authorize request.
-    # We're not using cookies because they won't work well in mobile clients.
-    authorizedRedirectUris:
-    - http://localhost:7070/oauth2/redirect
-    - myandroidapp://oauth2/redirect
-    - myiosapp://oauth2/redirect
-amazonProperties:
-  endpointUrl: https://s3.us-east-1.amazonaws.com
-  accessKey: '{cipher}6489f00d1ebef59a736c23fece20119415928bc3d4f491859f9cbf5d925988851b8711de85b387874941f49dfe59c042'
-  secretKey: '{cipher}6bb6639fe8d3dc35bdf4d07710ca52b5ce1a5ac03cea8e96ce5e2e6a4aeb81612fecb504414fec82b2098324c36356a41b10c23ca9a655f32d8050fa9b2ed0b9'
-  bucketName: galaxygame
